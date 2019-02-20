@@ -1,0 +1,36 @@
+#include <kipr/botball.h>
+
+int main()
+{    motor(2,100);// turn
+     msleep(700);
+     
+     motor(2,100);
+     motor(0,100);
+     msleep(2500);//foward
+     
+     motor(0,100;//turn
+     motor(2,0);
+     msleep(1300);
+while(digital(0)==0)
+     {
+     
+     if(analog(0)<400)
+     {
+        motor(0,-35);
+        motor(1,0);
+        
+        }
+        
+ }
+ motor(0,100);//turn cw
+ motor(2,-100);
+ msleep(600);
+ 
+ motor(0,100);//to starting box
+ motor(2,100);
+ msleep(2500);
+ 
+ 
+ 
+ return 0;
+} 
